@@ -6,6 +6,13 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		7D6926C52CE10522007456BC /* FirebaseCore in Frameworks */ = {isa = PBXBuildFile; productRef = 7D6926C42CE10522007456BC /* FirebaseCore */; };
+		7D6926C72CE10522007456BC /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 7D6926C62CE10522007456BC /* FirebaseFirestore */; };
+		7D6926DD2CE10A96007456BC /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 7D6926DC2CE10A96007456BC /* RealmSwift */; };
+		7D6926DF2CE10AA5007456BC /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 7D6926DE2CE10AA5007456BC /* Realm */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		7D35F86E2CE0C9C000140E52 /* Sport Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sport Tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -23,6 +30,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D6926DD2CE10A96007456BC /* RealmSwift in Frameworks */,
+				7D6926C72CE10522007456BC /* FirebaseFirestore in Frameworks */,
+				7D6926DF2CE10AA5007456BC /* Realm in Frameworks */,
+				7D6926C52CE10522007456BC /* FirebaseCore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -32,8 +43,9 @@
 		7D35F8652CE0C9C000140E52 = {
 			isa = PBXGroup;
 			children = (
-				7D35F8702CE0C9C000140E52 /* Sport Tracker */,
 				7D35F86F2CE0C9C000140E52 /* Products */,
+				7D35F8702CE0C9C000140E52 /* Sport Tracker */,
+				7D6926DB2CE10A96007456BC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -43,6 +55,13 @@
 				7D35F86E2CE0C9C000140E52 /* Sport Tracker.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		7D6926DB2CE10A96007456BC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -65,6 +84,10 @@
 			);
 			name = "Sport Tracker";
 			packageProductDependencies = (
+				7D6926C42CE10522007456BC /* FirebaseCore */,
+				7D6926C62CE10522007456BC /* FirebaseFirestore */,
+				7D6926DC2CE10A96007456BC /* RealmSwift */,
+				7D6926DE2CE10AA5007456BC /* Realm */,
 			);
 			productName = "Sport Tracker";
 			productReference = 7D35F86E2CE0C9C000140E52 /* Sport Tracker.app */;
@@ -94,6 +117,10 @@
 			);
 			mainGroup = 7D35F8652CE0C9C000140E52;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				7D6926BE2CE1040F007456BC /* XCRemoteSwiftPackageReference "realm-swift" */,
+				7D6926C32CE10522007456BC /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 7D35F86F2CE0C9C000140E52 /* Products */;
 			projectDirPath = "";
@@ -251,7 +278,8 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Sport Tracker/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = 975THDDA7F;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -264,7 +292,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "sk.belispatrik.Sport-Tracker";
+				PRODUCT_BUNDLE_IDENTIFIER = "sk.patrikbelis.Sport-Tracker";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -279,7 +307,8 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Sport Tracker/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = 975THDDA7F;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -292,7 +321,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "sk.belispatrik.Sport-Tracker";
+				PRODUCT_BUNDLE_IDENTIFIER = "sk.patrikbelis.Sport-Tracker";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -322,6 +351,49 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7D6926BE2CE1040F007456BC /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift";
+			requirement = {
+				kind = versionRange;
+				maximumVersion = 10.49.3;
+				minimumVersion = 10.37.0;
+			};
+		};
+		7D6926C32CE10522007456BC /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.4.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7D6926C42CE10522007456BC /* FirebaseCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7D6926C32CE10522007456BC /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCore;
+		};
+		7D6926C62CE10522007456BC /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7D6926C32CE10522007456BC /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		7D6926DC2CE10A96007456BC /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7D6926BE2CE1040F007456BC /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
+		7D6926DE2CE10AA5007456BC /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7D6926BE2CE1040F007456BC /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = Realm;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 7D35F8662CE0C9C000140E52 /* Project object */;
 }
